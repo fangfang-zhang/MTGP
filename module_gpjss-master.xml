@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_gpjss-master" default="compile.module.gpjss-master">
+  <dirname property="module.gpjss-master.basedir" file="${ant.file.module_gpjss-master}"/>
+  
+  <property name="module.jdk.home.gpjss-master" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.gpjss-master" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.gpjss-master" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.gpjss-master" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="gpjss-master.output.dir" value="${module.gpjss-master.basedir}/../../../../../../home/fzhang/eclipse-workspace/GPJSS-master/bin"/>
+  <property name="gpjss-master.testoutput.dir" value="${module.gpjss-master.basedir}/../../../../../../home/fzhang/eclipse-workspace/GPJSS-master/bin"/>
+  
+  <path id="gpjss-master.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="gpjss-master.module.production.classpath">
+    <path refid="${module.jdk.classpath.gpjss-master}"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/pshecj.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jzlib-1.0.7.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jfreechart-1.0.19.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jcommon-1.0.23.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/itext-1.2.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-simple-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-dense64-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-core-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="gpjss-master.runtime.production.module.classpath">
+    <pathelement location="${gpjss-master.output.dir}"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/pshecj.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jzlib-1.0.7.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jfreechart-1.0.19.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jcommon-1.0.23.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/itext-1.2.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-simple-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-dense64-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-core-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="gpjss-master.module.classpath">
+    <path refid="${module.jdk.classpath.gpjss-master}"/>
+    <pathelement location="${gpjss-master.output.dir}"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/pshecj.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jzlib-1.0.7.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jfreechart-1.0.19.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jcommon-1.0.23.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/itext-1.2.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-simple-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-dense64-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-core-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4.jar"/>
+  </path>
+  
+  <path id="gpjss-master.runtime.module.classpath">
+    <pathelement location="${gpjss-master.output.dir}"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/pshecj.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jzlib-1.0.7.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jfreechart-1.0.19.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/jcommon-1.0.23.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/itext-1.2.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-simple-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-dense64-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/EJML-core-0.27.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-math3-3.5.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4-javadoc.jar"/>
+    <pathelement location="${basedir}/../../Downloads/ECJ/GPJSS-master/libraries/commons-lang3-3.4.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.gpjss-master">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.gpjss-master">
+    <patternset refid="excluded.from.module.gpjss-master"/>
+  </patternset>
+  
+  <path id="gpjss-master.module.sourcepath">
+    <dirset dir="${module.gpjss-master.basedir}/../../../../../../home/fzhang/eclipse-workspace/GPJSS-master">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.gpjss-master" depends="compile.module.gpjss-master.production,compile.module.gpjss-master.tests" description="Compile module GPJSS-master"/>
+  
+  <target name="compile.module.gpjss-master.production" depends="register.custom.compilers" description="Compile module GPJSS-master; production classes">
+    <mkdir dir="${gpjss-master.output.dir}"/>
+    <javac2 destdir="${gpjss-master.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.gpjss-master}/javac">
+      <compilerarg line="${compiler.args.gpjss-master}"/>
+      <bootclasspath refid="gpjss-master.module.bootclasspath"/>
+      <classpath refid="gpjss-master.module.production.classpath"/>
+      <src refid="gpjss-master.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.gpjss-master"/>
+    </javac2>
+    
+    <copy todir="${gpjss-master.output.dir}">
+      <fileset dir="${module.gpjss-master.basedir}/../../../../../../home/fzhang/eclipse-workspace/GPJSS-master/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.gpjss-master.tests" depends="register.custom.compilers,compile.module.gpjss-master.production" description="compile module GPJSS-master; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.gpjss-master" description="cleanup module">
+    <delete dir="${gpjss-master.output.dir}"/>
+    <delete dir="${gpjss-master.testoutput.dir}"/>
+  </target>
+</project>
