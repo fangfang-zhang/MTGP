@@ -60,4 +60,4 @@ Nguyen, S., Zhang, M., Tan, K.C., 2016. <a href="http://ieeexplore.ieee.org/stam
 
 ### Who do I talk to? ###
 
-* Email: yi.mei@ecs.vuw.ac.nz
+* Email: yi.mei@ecs.vuw.ac.nz and fangfang.zhang@ecs.vuw.ac.nz
